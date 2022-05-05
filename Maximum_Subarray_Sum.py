@@ -64,7 +64,7 @@ for i in range(0, n):
     cur_sum += arr[i]
     if cur_sum > maximum_sum:
         maximum_sum = cur_sum
-    elif cur_sum <= 0:
+    if cur_sum <= 0:
         cur_sum = 0
 print(maximum_sum)
 
